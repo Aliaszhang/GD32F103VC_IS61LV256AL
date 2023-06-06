@@ -83,7 +83,7 @@ int exmc_sram_init(void)
     nor_init_struct.burst_mode = DISABLE;                           /*!< enable or disable the burst mode */
     nor_init_struct.databus_width = EXMC_NOR_DATABUS_WIDTH_8B;      /*!< specifies the databus width of external memory */
     nor_init_struct.memory_type = EXMC_MEMORY_TYPE_SRAM ;            /*!< specifies the type of external memory */
-    nor_init_struct.address_data_mux = DISABLE;                      /*!< specifies whether the data bus and address bus are multiplexed */
+    nor_init_struct.address_data_mux = ENABLE;                      /*!< specifies whether the data bus and address bus are multiplexed */
     nor_init_struct.read_write_timing = &nor_timing_init_struct;
     nor_init_struct.write_timing = &nor_timing_init_struct;
     exmc_norsram_init(&nor_init_struct);
